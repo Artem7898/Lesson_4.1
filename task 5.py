@@ -37,3 +37,19 @@ def simple(i):
 
 i = int(input('Введите порядковый номер искомого простого числа: '))
 print(simple(i))
+
+##############################################################################################
+
+# Решения Задачи №5
+
+from timeit import default_timer as timer
+
+start = timer()
+
+n = int(input())
+s = [x for x in range(2, n+1) if x not in [i for sub in [list(range(2 * j, n+1, j)) for j in range(2, n // 2)] for i in sub]]
+
+print(*s)  # Полностью построено на генераторах списков.
+
+end = timer()
+print(end - start) # Повышая челое число, на разных порядковых номерах, повышатся время выполнение алгоритма.
