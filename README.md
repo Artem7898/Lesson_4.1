@@ -1,4 +1,5 @@
-# Lesson_4.1 GeekBrains
+#  GeekBrains Python course
+
 Задание 1.
 
 Приведен код, который позволяет сохранить в
